@@ -1,0 +1,101 @@
+@import "../abstracts/all.scss";
+
+@include mobile{
+
+  .mobile-tablet-hidden{
+    display: none;
+  }
+
+
+  .shots-section{
+    padding: 3rem;
+  
+    .shots-container{
+  
+      &_title{
+        color: $sectionTitle;
+        font-weight: $fw-bold;
+        font-size: $fs-normal;
+        font-family: 'Roboto' , sans-serif;
+        margin-top: 1.6rem;
+      }
+  
+      .shots-img{
+        width: 100%;
+        align-self: center;
+        margin-top: 1.6rem;
+      }
+    }
+  }
+}
+
+@include tablet{
+
+
+  .tablet-hidden{
+    display: none;
+  }
+
+  .mobile-tablet-hidden{
+    display: none;
+  }
+
+  .shots-section{
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 6rem;
+  
+    .shots-container{
+  
+      &_images{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .shots-img{
+          width: 30%;
+          align-self: center;
+          margin-top: 1.6rem;
+        }
+      }
+
+      .container-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .insta-link{
+          color: $navItemText;
+          font-size: 13px;
+        }
+        }
+      }
+    }
+  }
+
+  @include desktop{
+
+    .shots-section{
+      padding: 12rem;
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    .mobile-tablet-hidden{
+      display: block;
+    }
+
+    .shots-section{
+      .shots-container{
+        &_images{
+          .shots-img{
+            width: 22%;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
