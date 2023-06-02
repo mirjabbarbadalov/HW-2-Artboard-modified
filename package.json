@@ -1,12 +1,14 @@
 {
   "name": "hw-2",
   "version": "1.0.0",
-  "description": "Mirjabbar Badalov's Hw-2 assignment.",
+  "description": "Mirjabbar Badalov's Full Stack course Homework 2 assignment, Artboard page, fully responsive to desktop tablet and mobile. Used gulp automation and scss styling.",
   "main": "index.html",
   "scripts": {
+
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "gulp dev",
     "build": "gulp build"
+
   },
   "author": "",
   "license": "ISC",
